@@ -10,6 +10,16 @@ I have created a new repository named GS-Web-Dev-Mentorship where I am going to 
   > I've added one checkbox to accept the terms & services.
   > Also I have added Signup with facebook button and Signup button.
   
+### Project-2
+##### Hogwarts Form
+   > I've added one text, one radio buttton, one checkbox,one dropdown and one button:
+  - Name 
+  - Is any of the Parent a Muggle
+  - Which element you naturally attract to: air, water, or fire? (a candidate may be attracted to more than one element)
+  - Which is your favorite House at Hogwarts?
+  - Submit 
+  
+  
 ### Forking the repo
 
 
