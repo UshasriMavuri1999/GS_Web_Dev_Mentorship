@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>On&Off-EDU</title>
+  <link rel="stylesheet" href="./css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+
+<body>
+  <header>
+    <!-- <img class="logo"src="dsd.jpg" alt="logo"> -->
+
+    <div class="main">
+      <h1 class="h1" style="font-size:35px">On&Off-Edu</h1>
+      <div class="top">
+        <h3 class="button">Home </h3>
+        <h3 class="button"> About </h3>
+        <h3 class="button"> Contactus</h3>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="slides" style="max-width:100%">
+    <div class="slidediv">
+      <img class="mySlides " src="./images/pic2.jpg" style="width:100%">
+
+      <!-- <p class="item-1">GET YOUR <i>education</i> TODAY</p> -->
+    </div>
+    <div class="slidediv">
+      <img class="mySlides " src="./images/pic1.png" style="width:100%">
+      <!-- <p class="item-2">knowledge IS FREE</p> -->
+
+    </div>
+    <img class="mySlides " src="./images/pic3.jpg" style="width:100%">
+
+  </div>
+  <h1 align="center" style="padding:50px;font-size:50px ;text-decoration:underline">Roles</h1>
+
+  <div class="cards">
+
+    <div class="student">
+      <img class="cardimg" src="./images/student.png" alt="">
+
+      <div class="c2">
+        <h1>Student</h1>
+        <!-- <button type="button" name="Register">Register</button> -->
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+
+
+    </div>
+    <div class="mentor">
+      <img class="cardimg" src="./images/teacher.png" alt="">
+      <div class="c2">
+        <h1>Teacher</h1>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+
+    </div>
+  </div>
+
+  <h1 align="center" style="padding:50px ;font-size:50px;text-decoration:underline">Popular Courses</h1>
+  <div class="courses">
+
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+      <img src="./images/c.jpg" class="courseimg" alt="">
+      <h5 align="center">C Programming</h5>
+    </div>
+    <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+      <img src="./images/em.jpg" class="courseimg" alt="">
+      <h5 align="center">Engineering Mechanics</h5>
+    </div>
+    <div class="item" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">
+      <img src="./images/som.jpg" class="courseimg" alt="">
+      <h5 align="center">Strength Of Materials</h5>
+    </div>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+      <img src="./images/aec.jpg" class="courseimg" alt="">
+      <h5 align="center">Analog Electric Circuits</h5>
+    </div>
+    <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+      <img src="./images/java.jpg" class="courseimg" alt="">
+      <h5 align="center">Java Programming</h5>
+    </div>
+
+  </div>
+  <div class="newsletter" style="color:white">
+    <h1 align="center">Subscribe for Updates </h1>
+
+    <form action="post" align="center">
+      <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+        <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
+        <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+      </div>
+    </form>
+    <hr>
+<div class="menu1" style="display:flex;justify-content:space-around">
+  <h1  style="text-shadow: 2px 2px 8px #FF0000;font-size:50px">ON & OFF - EDU</h1>
+  <div class="menuitems" style="display:flex ;justify-content:space-around;line-height: 30px;">
+    <div class="menu">
+      <ul>
+        MENU
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Aboutus</a></li>
+      </ul>
+    </div>
+    <div class="Usefullinks">
+      <ul>
+        USEFUL LINKS
+
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="Contactus">
+      <ul>
+        CONTACTUS
+
+        <li ><img src="./images/phone-call.svg" width="20" height="20"  alt=""> +91-9999999999</li>
+        <li><img src="./images/envelope.svg" width="20" height="20" alt=""> team5@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+    <hr>
+    <div class="copyright">
+      <span>
+        Copyright ©2019 All rights reserved | This template is made with by <a href="#" target="_blank">Team5</a>
+      </span>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

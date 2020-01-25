@@ -1,0 +1,57 @@
+#menu-hide{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4%;
+  height: 100%;
+  background-color: #41c4c4;
+}
+
+.menuItem{
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0 20px 10px;
+  height: 4%;
+  width: 50%;
+}
+
+#menu-active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18%;
+  height: 100%;
+  background-color: #41c4c4;
+}
+
+#menu-active .menuItem{
+  justify-content: space-around;
+  padding: 20px 0 20px 10px;
+  height: 6%;
+  width: 11%;
+}
+
+.hide{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+#text{
+  margin-left: 20px;
+  margin-top: 22px;
+  font-size: 1.3em;
+}
+
+#options:hover,#menu-active #item:hover{
+  cursor: pointer;
+}
+
+#menu-active #item:hover{
+  opacity: 0.6;
+}
+.hover:hover{
+  background-color: #012033;  
+}
